@@ -44,6 +44,6 @@ namespace ChannelEngine.ViewModels.Order
         public string CurrencyCode { get; set; }
         public DateTime OrderDate { get; set; }
         public string ChannelCustomerNo { get; set; }
-        public IEnumerable<string> ExtraData { get; set; }
+        public KeyValuePair<string, string> ExtraData { get; set; }
     }
 }

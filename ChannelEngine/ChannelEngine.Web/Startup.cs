@@ -1,9 +1,12 @@
+using ChannelEngine.Services;
+using ChannelEngine.ViewModels.Options;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +27,13 @@ namespace ChannelEngine.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            // Options
+            services.Configure<ChannelEngineOptions>(Configuration.GetSection(ChannelEngineOptions.ChannelEngine));
+
+            // Services
+            services.AddSingleton<OrderService, OrderService>();
+            services.AddScoped<ProductService, ProductService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,7 +60,7 @@ namespace ChannelEngine.Web
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Product}/{action=Index}/{id?}");
             });
         }
     }

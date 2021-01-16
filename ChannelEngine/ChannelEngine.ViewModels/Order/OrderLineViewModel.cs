@@ -28,7 +28,7 @@ namespace ChannelEngine.ViewModels.Order
         public decimal UnitPriceInclVat { get; set; }
         public decimal FeeFixed { get; set; }
         public Enums.OrderLineCondition Condition { get; set; }
-        public DateTime? ExpectedDeliveryDate { get; set; }
+        public DateTime ExpectedDeliveryDate { get; set; }
 
     }
 }

@@ -360,3 +360,7 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/ChannelEngine/ChannelEngine.Services/obj/*
+/ChannelEngine/ChannelEngine.Web/bin/*
+/ChannelEngine/ChannelEngine.Web/obj/*
+/ChannelEngine/ChannelEngine.Services/obj/*

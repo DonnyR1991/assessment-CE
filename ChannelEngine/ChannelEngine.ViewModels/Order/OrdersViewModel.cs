@@ -13,7 +13,7 @@ namespace ChannelEngine.ViewModels.Order
         public int? LogId { get; set; }
         public bool Success { get; set; }
         public string Message { get; set; }
-        public IEnumerable<string> ValidationErrors { get; set; }
+        //public IEnumerable<string> ValidationErrors { get; set; }
         public IEnumerable<OrderViewModel> Content { get; set; }
     }
 }
