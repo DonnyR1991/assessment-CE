@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelEngine.Services", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelEngine.ViewModels", "ChannelEngine.ViewModels\ChannelEngine.ViewModels.csproj", "{21BEA7AD-5F46-4530-963A-E736D73D0C28}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelEngine.Common", "ChannelEngine.Common\ChannelEngine.Common.csproj", "{C2128D54-D922-4391-BA5D-19E157C58E63}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{21BEA7AD-5F46-4530-963A-E736D73D0C28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21BEA7AD-5F46-4530-963A-E736D73D0C28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21BEA7AD-5F46-4530-963A-E736D73D0C28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2128D54-D922-4391-BA5D-19E157C58E63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2128D54-D922-4391-BA5D-19E157C58E63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2128D54-D922-4391-BA5D-19E157C58E63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2128D54-D922-4391-BA5D-19E157C58E63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

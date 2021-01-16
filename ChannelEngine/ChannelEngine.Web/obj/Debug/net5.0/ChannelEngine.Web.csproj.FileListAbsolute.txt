@@ -9,7 +9,6 @@ C:\projects\assessment-CE\ChannelEngine\ChannelEngine.Web\bin\Debug\net5.0\ref\C
 C:\projects\assessment-CE\ChannelEngine\ChannelEngine.Web\bin\Debug\net5.0\ChannelEngine.Web.pdb
 C:\projects\assessment-CE\ChannelEngine\ChannelEngine.Web\bin\Debug\net5.0\ChannelEngine.Web.Views.dll
 C:\projects\assessment-CE\ChannelEngine\ChannelEngine.Web\bin\Debug\net5.0\ChannelEngine.Web.Views.pdb
-C:\projects\assessment-CE\ChannelEngine\ChannelEngine.Web\obj\Debug\net5.0\ChannelEngine.Web.csprojAssemblyReference.cache
 C:\projects\assessment-CE\ChannelEngine\ChannelEngine.Web\obj\Debug\net5.0\ChannelEngine.Web.GeneratedMSBuildEditorConfig.editorconfig
 C:\projects\assessment-CE\ChannelEngine\ChannelEngine.Web\obj\Debug\net5.0\ChannelEngine.Web.AssemblyInfoInputs.cache
 C:\projects\assessment-CE\ChannelEngine\ChannelEngine.Web\obj\Debug\net5.0\ChannelEngine.Web.AssemblyInfo.cs

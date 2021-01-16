@@ -2,3 +2,12 @@ C:\projects\assessment-CE\ChannelEngine\ChannelEngine.Console\obj\Debug\netcorea
 C:\projects\assessment-CE\ChannelEngine\ChannelEngine.Console\obj\Debug\netcoreapp3.1\ChannelEngine.Console.AssemblyInfoInputs.cache
 C:\projects\assessment-CE\ChannelEngine\ChannelEngine.Console\obj\Debug\netcoreapp3.1\ChannelEngine.Console.AssemblyInfo.cs
 C:\projects\assessment-CE\ChannelEngine\ChannelEngine.Console\obj\Debug\netcoreapp3.1\ChannelEngine.Console.csproj.CoreCompileInputs.cache
+C:\projects\assessment-CE\ChannelEngine\ChannelEngine.Console\bin\Debug\netcoreapp3.1\ChannelEngine.Console.exe
+C:\projects\assessment-CE\ChannelEngine\ChannelEngine.Console\bin\Debug\netcoreapp3.1\ChannelEngine.Console.deps.json
+C:\projects\assessment-CE\ChannelEngine\ChannelEngine.Console\bin\Debug\netcoreapp3.1\ChannelEngine.Console.runtimeconfig.json
+C:\projects\assessment-CE\ChannelEngine\ChannelEngine.Console\bin\Debug\netcoreapp3.1\ChannelEngine.Console.runtimeconfig.dev.json
+C:\projects\assessment-CE\ChannelEngine\ChannelEngine.Console\bin\Debug\netcoreapp3.1\ChannelEngine.Console.dll
+C:\projects\assessment-CE\ChannelEngine\ChannelEngine.Console\bin\Debug\netcoreapp3.1\ChannelEngine.Console.pdb
+C:\projects\assessment-CE\ChannelEngine\ChannelEngine.Console\obj\Debug\netcoreapp3.1\ChannelEngine.Console.dll
+C:\projects\assessment-CE\ChannelEngine\ChannelEngine.Console\obj\Debug\netcoreapp3.1\ChannelEngine.Console.pdb
+C:\projects\assessment-CE\ChannelEngine\ChannelEngine.Console\obj\Debug\netcoreapp3.1\ChannelEngine.Console.genruntimeconfig.cache

@@ -2,7 +2,7 @@
 
 namespace ChannelEngine.Services
 {
-    public class Class1
+    public class OrderService
     {
     }
 }
