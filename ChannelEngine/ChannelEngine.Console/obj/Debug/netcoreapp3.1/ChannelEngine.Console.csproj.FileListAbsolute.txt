@@ -1,0 +1,4 @@
+C:\projects\assessment-CE\ChannelEngine\ChannelEngine.Console\obj\Debug\netcoreapp3.1\ChannelEngine.Console.csprojAssemblyReference.cache
+C:\projects\assessment-CE\ChannelEngine\ChannelEngine.Console\obj\Debug\netcoreapp3.1\ChannelEngine.Console.AssemblyInfoInputs.cache
+C:\projects\assessment-CE\ChannelEngine\ChannelEngine.Console\obj\Debug\netcoreapp3.1\ChannelEngine.Console.AssemblyInfo.cs
+C:\projects\assessment-CE\ChannelEngine\ChannelEngine.Console\obj\Debug\netcoreapp3.1\ChannelEngine.Console.csproj.CoreCompileInputs.cache
