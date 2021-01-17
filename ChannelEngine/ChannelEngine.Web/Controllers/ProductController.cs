@@ -1,4 +1,5 @@
-﻿using ChannelEngine.Services;
+﻿using ChannelEngine.Common;
+using ChannelEngine.Services;
 using ChannelEngine.ViewModels.Product;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -10,16 +11,22 @@ namespace ChannelEngine.Web.Controllers
 {
     public class ProductController : Controller
     {
-        private readonly ProductService _productService;
+        private readonly IProductService _productService;
+        private readonly IChannelEngineService _channelEngineService;
 
-        public ProductController(ProductService productService)
+        public ProductController(IProductService productService, 
+            IChannelEngineService channelEngineService)
         {
             _productService = productService;
+            _channelEngineService = channelEngineService;
         }
 
         public async Task<IActionResult> Index()
         {
-            var model = await _productService.GetTopSoldProducts(5);
+            var statuses = new List<Enums.OrderStatus>() { Enums.OrderStatus.IN_PROGRESS };
+            var orders = await _channelEngineService.GetOrders(statuses);
+
+            var model = _productService.GetTopSoldProducts(orders, 5);
 
             return View(model);
         }

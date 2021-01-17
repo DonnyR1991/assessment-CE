@@ -32,8 +32,8 @@ namespace ChannelEngine.Web
             services.Configure<ChannelEngineOptions>(Configuration.GetSection(ChannelEngineOptions.ChannelEngine));
 
             // Services
-            services.AddSingleton<ChannelEngineService, ChannelEngineService>();
-            services.AddScoped<ProductService, ProductService>();
+            services.AddSingleton<IChannelEngineService, ChannelEngineService>();
+            services.AddScoped<IProductService, ProductService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

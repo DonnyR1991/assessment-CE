@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelEngine.Web", "ChannelEngine.Web\ChannelEngine.Web.csproj", "{87FDC949-4426-4182-AC94-4EE4750A6498}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChannelEngine.Web", "ChannelEngine.Web\ChannelEngine.Web.csproj", "{87FDC949-4426-4182-AC94-4EE4750A6498}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelEngine.Console", "ChannelEngine.Console\ChannelEngine.Console.csproj", "{33D83952-2605-4835-A59F-F88B2A27FCE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChannelEngine.Console", "ChannelEngine.Console\ChannelEngine.Console.csproj", "{33D83952-2605-4835-A59F-F88B2A27FCE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelEngine.Services", "ChannelEngine.Services\ChannelEngine.Services.csproj", "{03608960-D76E-41C6-B3A4-FBFE18C883ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChannelEngine.Services", "ChannelEngine.Services\ChannelEngine.Services.csproj", "{03608960-D76E-41C6-B3A4-FBFE18C883ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelEngine.ViewModels", "ChannelEngine.ViewModels\ChannelEngine.ViewModels.csproj", "{21BEA7AD-5F46-4530-963A-E736D73D0C28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChannelEngine.ViewModels", "ChannelEngine.ViewModels\ChannelEngine.ViewModels.csproj", "{21BEA7AD-5F46-4530-963A-E736D73D0C28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelEngine.Common", "ChannelEngine.Common\ChannelEngine.Common.csproj", "{C2128D54-D922-4391-BA5D-19E157C58E63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChannelEngine.Common", "ChannelEngine.Common\ChannelEngine.Common.csproj", "{C2128D54-D922-4391-BA5D-19E157C58E63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelEngine.Test", "ChannelEngine.Test\ChannelEngine.Test.csproj", "{C3A8A204-BFAD-4FEE-A2E5-2E241937AC19}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{C2128D54-D922-4391-BA5D-19E157C58E63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2128D54-D922-4391-BA5D-19E157C58E63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2128D54-D922-4391-BA5D-19E157C58E63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3A8A204-BFAD-4FEE-A2E5-2E241937AC19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3A8A204-BFAD-4FEE-A2E5-2E241937AC19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3A8A204-BFAD-4FEE-A2E5-2E241937AC19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3A8A204-BFAD-4FEE-A2E5-2E241937AC19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

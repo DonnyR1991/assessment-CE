@@ -9,19 +9,24 @@ using System.Threading.Tasks;
 
 namespace ChannelEngine.Services
 {
-    public class ProductService
+    public interface IProductService
     {
-        private readonly ChannelEngineService _channelEngineService;
+        IEnumerable<ProductViewModel> GetTopSoldProducts(OrdersViewModel orders, int amount);
+        ProductEditStockViewModel CreateProductEditStockViewModel(string merchantProductNo);
+        Task<bool> UpdateStock(ProductEditStockViewModel model);
+    }
 
-        public ProductService(ChannelEngineService channelEngineService)
+    public class ProductService : IProductService
+    {
+        private readonly IChannelEngineService _channelEngineService;
+
+        public ProductService(IChannelEngineService channelEngineService)
         {
             _channelEngineService = channelEngineService;
         }
 
-        public async Task<IEnumerable<ProductViewModel>> GetTopSoldProducts(int amount)
+        public IEnumerable<ProductViewModel> GetTopSoldProducts(OrdersViewModel orders, int amount)
         {
-            var orders = await GetOrdersInProgress();
-
             if (orders == null)
             {
                 return null;
@@ -55,13 +60,6 @@ namespace ChannelEngine.Services
             var isUpdated = await _channelEngineService.UpdateProductStock(model.MerchantProductNo, model.Stock);
 
             return isUpdated;
-        }
-
-        private async Task<OrdersViewModel> GetOrdersInProgress()
-        {
-            var statuses = new List<Enums.OrderStatus>() { Enums.OrderStatus.IN_PROGRESS };
-            var orders = await _channelEngineService.GetOrders(statuses);
-            return orders;
         }
     }
 }

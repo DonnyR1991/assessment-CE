@@ -12,7 +12,13 @@ using System.Web;
 
 namespace ChannelEngine.Services
 {
-    public class ChannelEngineService
+    public interface IChannelEngineService
+    {
+        Task<OrdersViewModel> GetOrders(IEnumerable<Enums.OrderStatus> orderStatuses);
+        Task<bool> UpdateProductStock(string merchantProductNo, int stock);
+    }
+
+    public class ChannelEngineService : IChannelEngineService
     {
         private static readonly HttpClient _client = new HttpClient();
 

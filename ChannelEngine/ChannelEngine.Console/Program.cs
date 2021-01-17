@@ -45,9 +45,8 @@ namespace ChannelEngine.Console
             services.Configure<ChannelEngineOptions>(configuration.GetSection(ChannelEngineOptions.ChannelEngine));
 
             // Services
-            services.AddSingleton<ChannelEngineService, ChannelEngineService>();
-            services.AddScoped<ProductService, ProductService>();
-            // services.AddTransient<IMyRespository, MyConcreteRepository>();
+            services.AddSingleton<IChannelEngineService, ChannelEngineService>();
+            services.AddScoped<IProductService, ProductService>();
 
             // add app
             services.AddTransient<App>();

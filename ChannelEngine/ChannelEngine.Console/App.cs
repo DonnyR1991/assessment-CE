@@ -1,4 +1,5 @@
-﻿using ChannelEngine.Services;
+﻿using ChannelEngine.Common;
+using ChannelEngine.Services;
 using ChannelEngine.ViewModels.Product;
 using Microsoft.Extensions.Logging;
 using System;
@@ -12,11 +13,14 @@ namespace ChannelEngine.Console
     public class App
     {
         private readonly ILogger<App> _logger;
-        private readonly ProductService _productService;
+        private readonly IChannelEngineService _channelEngineService;
+        private readonly IProductService _productService;
 
-        public App(ILogger<App> logger, ProductService productService)
+
+        public App(ILogger<App> logger, IChannelEngineService channelEngineService, IProductService productService)
         {
             _logger = logger;
+            _channelEngineService = channelEngineService;
             _productService = productService;
         }
 
@@ -24,7 +28,10 @@ namespace ChannelEngine.Console
         {
             _logger.LogInformation("Starting...");
 
-            var products = await _productService.GetTopSoldProducts(5);
+            var statuses = new List<Enums.OrderStatus>() { Enums.OrderStatus.IN_PROGRESS };
+            var orders = await _channelEngineService.GetOrders(statuses);
+
+            var products = _productService.GetTopSoldProducts(orders, 5);
 
             System.Console.WriteLine($"Products found: {products.Count()}");
 
