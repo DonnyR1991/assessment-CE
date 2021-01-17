@@ -12,11 +12,11 @@ using System.Web;
 
 namespace ChannelEngine.Services
 {
-    public class OrderService
+    public class ChannelEngineService
     {
         private static readonly HttpClient _client = new HttpClient();
 
-        public OrderService(IOptions<ChannelEngineOptions> options)
+        public ChannelEngineService(IOptions<ChannelEngineOptions> options)
         {
             _client.BaseAddress = new Uri(options.Value.ApiUri);
             _client.DefaultRequestHeaders.Add("X-CE-KEY", options.Value.ApiKey);
@@ -45,5 +45,17 @@ namespace ChannelEngine.Services
 
             return null;
         }
+
+        public async Task<bool> UpdateProductStock(string merchantProductNo, int stock)
+        {
+            var json = JsonConvert.SerializeObject(new object[] { new { MerchantProductNo = merchantProductNo, Stock = stock, Price = 0 } });
+            var data = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
+
+            using (var response = await _client.PutAsync("offer", data))
+            {
+                return response.IsSuccessStatusCode;
+            }
+        }
+
     }
 }

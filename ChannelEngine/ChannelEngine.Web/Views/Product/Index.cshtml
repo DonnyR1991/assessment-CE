@@ -29,7 +29,7 @@
                     @Html.DisplayFor(modelItem => item.Quantity)
                 </td>
                 <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.MerchantProductNo })
+                    @Html.ActionLink("Edit stock", "EditStock", new { id = item.MerchantProductNo })
                 </td>
             </tr>
         }

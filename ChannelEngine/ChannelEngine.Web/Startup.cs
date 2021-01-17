@@ -32,7 +32,7 @@ namespace ChannelEngine.Web
             services.Configure<ChannelEngineOptions>(Configuration.GetSection(ChannelEngineOptions.ChannelEngine));
 
             // Services
-            services.AddSingleton<OrderService, OrderService>();
+            services.AddSingleton<ChannelEngineService, ChannelEngineService>();
             services.AddScoped<ProductService, ProductService>();
         }
 
